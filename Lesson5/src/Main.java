@@ -21,7 +21,7 @@ public class Main {
                 long a = System.currentTimeMillis();    //засекаем время выполнения потока
                 int z = u * h;          //смещение индекса массива
                 for (int j = 0; j < h; j++, z++) {
-                    m[u][j] = (float)(m[u][j] * Math.sin(0.2f + z / 5) * Math.cos(0.2f * z / 5) * Math.cos(0.4f * z / 2));
+                    m[u][j] = (float)(m[u][j] * Math.sin(0.2f + z / 5) * Math.cos(0.2f + z / 5) * Math.cos(0.4f + z / 2));
                 }
                 System.out.println("На работу " + u + " потока было затрчено " + (System.currentTimeMillis() - a) + " ms."); //выводим время выполнения потока
             });
